@@ -1,0 +1,210 @@
+html {
+	background-color: #202025;
+}
+
+#milage-main {
+	padding-top: 50px;
+	padding: 50px 20px;
+	display: flex;
+}
+
+#milage {
+	flex: 2;
+}
+
+.history {
+	flex: 1;
+	color: #fff;
+}
+
+.history .title {
+	font-size: 2rem;
+}
+
+.history .blackboard {
+	width: 100%;
+	height: calc(100vh - 150px);
+	outline: none;
+	border: none;
+	background-color: rgba(255,255,255,.05);
+	color: #fff;
+	font-size: 1rem;
+	font-family: 'SF Neo Text';
+	padding: 2rem;
+	margin-top: 1rem;
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 8px;
+	line-height: 1.5;
+}
+
+.milage-title {
+	font-size: 85px;
+	font-family: 'SF Neo text';
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 50px;
+	/* color: #313236; */
+	color: #ffd92e;
+	text-shadow: 0 0px 20px rgba(255, 251, 0, 0.507);
+	
+}
+
+.coin {
+	background-color: #ffd000;
+	border-radius: 50%;
+	border: 5px solid #c98a15;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+	margin-right: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	animation-name: spinningCoin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	box-shadow: 0 0 20px rgba(255, 251, 0, 0.507);
+}
+
+@keyframes spinningCoin {
+	0% {
+		transform: scaleX(0)
+	}
+
+	50% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.ap-wrapper {
+	margin: auto;
+	text-align: center;
+}
+
+.ap-wrapper .ap {
+	display: inline-block;
+	text-align: center;
+	width: auto;
+	font-size: 16px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.4);
+	border-radius: 5px;
+	padding: 15px;
+	margin: 0px auto 40px;
+	background-color: #3a434e;
+	color: #fff;
+	user-select: none;
+}
+
+.ap-wrapper .ap .section {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	border-radius: 5px;
+	/* overflow: hidden; */
+}
+
+.name {
+	font-size: 22px;
+	font-family: 'SF Neo text';
+	font-weight: 700;
+	color: #eee;
+}
+
+.milage-point {
+	background-color: #eb8e8e;
+	font-size: 23px;
+	font-weight: 700;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.milage-point .data {
+	padding: 0 20px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.milage-point .minus, .milage-point .plus {
+	border-radius: 0;
+	height: 100%;
+	background-color: #db7373;
+	padding: 5px 10px 7px;
+}
+
+.milage-point .minus:hover, .milage-point .plus:hover {
+	background-color: #cc6565;
+}
+
+.milage-point .minus:active, .milage-point .plus:active {
+	background-color: #b15050;
+}
+
+.milage-point div {
+	display: inline-block;
+}
+
+.go-out, .out-sleep {
+	background-color: #ffffff;
+	color: #000;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.go-out-title, .out-sleep-title {
+	padding: 5px;
+	background-color: #eee;
+	border-radius: 5px 5px 0 0;
+	font-size: 13px;
+}
+
+.go-out-count, .out-sleep-count {
+	display: flex;
+}
+
+.go-out-count div, .out-sleep-count div {
+	flex: 1;
+}
+
+.count-num {
+	background-color: #fff;
+	padding: 3px 15px;
+}
+
+.minus, .plus {
+	color: #fff;
+	width: 40px;
+	padding: 1px 0 2px;
+	font-weight: 700;
+	cursor: pointer;
+	user-select: none;
+}
+
+.minus {
+	background-color: #31946e;
+	border-radius: 0 0 0 5px;
+}
+
+.minus:hover {
+	background-color: #227957;
+}
+
+.minus:active {
+	background-color: #176346;
+}
+
+.plus {
+	background-color: #557fcc;
+	border-radius: 0 0 5px 0;
+}
+
+.plus:hover {
+	background-color: #3d62a7;
+}
+
+.plus:active {
+	background-color: #2d4f8d;
+}

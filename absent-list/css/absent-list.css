@@ -1,0 +1,191 @@
+#absent-list-main {
+	/*padding: 0 20px;*/
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+.whole-contents {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.absent-list-page {
+	margin: auto;
+}
+
+.absent-list-wrapper {
+	/* max-width: 100%; */
+}
+
+.absent-list-header {
+	font-size: 1em;
+	margin-bottom: .4em;
+}
+
+.ap-table {
+	display: table;
+	border: 1px solid #e8e8e8;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	/* height: calc(100% - 3em); */
+	/* height: 100em; */
+}
+
+.col {
+	text-align: center;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-0 {
+	background-color: #f8f8f8;
+	font-weight: 700;
+}
+
+.item-col {
+	height: 2em;
+	padding: .3em;
+}
+
+.input-row {
+	display: table-row;
+}
+
+.row-0 {
+	font-weight: 700 !important;
+}
+
+.absent-list-header {
+	text-align: center;
+}
+
+.today-date {
+	text-align: right;
+	font-size: .6em;
+	margin-bottom: 1em;
+}
+
+.kind-col-division, .item-col-division {
+	flex: .7;
+}
+
+.kind-col-division {
+	width: 10%;
+}
+
+.absent-list-container {
+	font-size: 1em;
+}
+
+.activity-item {
+	margin: 0;
+	padding: 3px;
+	line-height: 1.1;
+	/* -webkit-user-select: none; */
+	/* user-select: none; */
+	border-radius: 5px;
+	cursor: default;
+
+}
+
+.ap-name {
+	cursor: default;
+}
+
+.ap-name:hover {
+	/* background: #2e2e2e; */
+	/* border: 2px solid #2e2e2e; */
+	/* border-radius: 2px; */
+	box-shadow: 0 0 0 2px #2e2e2e;
+}
+
+/* .activity-item:hover {
+	background-color: #f0f0f0;
+}
+
+.activity-item:active {
+	background-color: #e0e0e0;
+} */
+
+.activity-item.green {
+	color: #31a204;
+}
+
+.activity-item.blue {
+	color: #0068d6;
+}
+
+.activity-item.violet {
+	color: #6400d6;
+}
+
+.num-go-out .absent-list-container {
+	font-size: 1.5em;
+	font-family: 'SF Neo text';
+	font-weight: 400;
+}
+
+/* START */
+/* AP Info Bubble */
+.ap-info-bubble {
+	visibility: hidden;
+	pointer-events: none;
+	background: #2c2c2c;
+	color: #fff;
+	display: inline-block;
+	position: fixed;
+	border-radius: 5px;
+	z-index: 9999;
+	padding: 5px 20px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.2);
+	transform: translateY(10px);
+	opacity: 0;
+	transition: transform .2s ease, opacity .2s ease;
+}
+
+.ap-info-bubble.shown {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.ap-info-bubble > div {
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.ap-info-bubble > div .title {
+	font-weight: 500;
+	font-size: .8em;
+	margin-bottom: 2px;
+}
+
+.ap-info-bubble > div .contents {
+	font-size: 1em;
+}
+/* AP Info Bubble */
+/* END */
+
+/* START */
+/* Direct access to adding events */
+.direct-add-event {
+	flex: 2;
+}
+/* Direct access to adding events */
+/* END */
+
+/* table */
+td, th, tr {
+	font-size: .7em;
+}
+
+tr {
+
+}
+
+@page {
+	size: 21cm 29.7cm;
+}

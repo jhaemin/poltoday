@@ -1,0 +1,22 @@
+.input-text-ui {
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 7px;
+	padding: .7rem .8rem;
+	font-size: .9rem;
+	font-weight: 400;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	transition: background .2s ease-in-out;
+	cursor: default;
+}
+
+.input-text-ui:active {
+	cursor: text;
+}
+
+.input-text-ui:focus {
+	background-color: #e8e8e8;
+	cursor: text;
+}

@@ -1,0 +1,123 @@
+table {
+	table-layout: auto;
+}
+
+.platoon-change {
+	margin: auto;
+	width: 100%;
+	max-width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	margin-top: 30px;
+}
+
+.platoon-change-button-wrapper {
+	flex: 1;
+}
+
+.platoon-change-button-wrapper button {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-family: 'SF Neo text';
+	background-color: #364256;
+	color: #fff;
+	user-select: none;
+	border: none;
+	font-weight: 400;
+	font-size: 20px;
+	border-bottom: 3px solid rgba(0,0,0,.2);
+}
+
+.platoon-change-button-wrapper button:hover {
+	background-color: #1f2838;
+}
+
+.platoon-change-button-wrapper button:active {
+	background-color: #131b29;
+	border: none;
+	border-top: 3px solid rgba(0,0,0,.2);
+}
+
+.platoon-change-button-wrapper.selected button {
+	background-color: #6eb96b;
+}
+
+.platoon-face, .date-face {
+	font-size: .5em;
+	font-weight: 700;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.date-face {
+	margin-left: .5em;
+	display: inline-block;
+}
+
+.contents {
+	padding: 0;
+}
+
+.platoon-and-date {
+	padding-bottom: .5em;
+	display: flex;
+	font-size: .5em;
+	font-weight: 700;
+	text-align: right;
+	display: inherit;
+}
+
+.whole-table {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.members-table {
+	flex: 1;
+	margin-right: 30px;
+}
+
+.right-side-table-container {
+	flex: 1;
+	margin: 0;
+}
+
+.training-table {
+	margin-top: 40px;
+}
+
+.total-row {
+	background-color: #fff3e5;
+}
+
+.total-go-row {
+	background-color: #e5ecff;
+}
+
+.am-training-row {
+	background-color: #ffd5d5;
+}
+
+.pm-training-row {
+	background-color: #e5ffe5;
+}
+
+td, th {
+	font-size: .35em;
+	padding: .2em;
+	border-color: #999;
+}
+
+.page-a4-landscape {
+	padding: 1cm;
+}
+
+@page {
+	size: 29.7cm 21cm;
+}

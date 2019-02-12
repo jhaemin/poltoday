@@ -1,0 +1,67 @@
+.add-coupon {
+	width: calc(100% - 60px);
+	margin: auto;
+	margin-top: 30px;
+}
+
+.add-coupon-container {
+	
+}
+
+.add-coupon-item {
+	background-color: #dce7f7;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	/* border: 3px solid #8db7ff; */
+}
+
+.add-coupon-item-wrapper {
+	/* height: 50px; */
+	display: flex;
+}
+
+.coupon-detail {
+	flex: 1;
+}
+
+input {
+	display: block;
+	background-color: transparent;
+	border: none;
+}
+
+select, input {
+	width: calc(100% - 20px);
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	font-size: 15px;
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.ap-name {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.ap-name * {
+	cursor: default;
+}
+
+.ap-name .name-input {
+	cursor: default;
+	user-select: none;
+}
+
+.ap-name-input {
+	text-align: center;
+	font-size: 15px;
+}

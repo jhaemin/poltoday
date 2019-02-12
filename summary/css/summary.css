@@ -1,0 +1,371 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	color: #fff;
+	/*cursor: none;*/
+	overflow: hidden;
+	/*font-family: "BMHANNAH";*/
+}
+
+body > * {
+	user-select: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+#summary-main {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 3rem 0;
+	box-sizing: border-box;
+}
+
+.header {
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 4rem;
+}
+
+.header .poltoday-logo {
+	width: 4rem;
+	height: 4rem;
+	background-image: url("/android-chrome-512x512.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	border-radius: .7rem;
+	overflow: hidden;
+	margin-right: 1.5rem;
+}
+
+.header .corps-duty {
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.header .date-header {
+	text-align: right;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.box-container {
+	display: flex;
+	align-items: stretch;
+	/* height: calc(100vh - 10rem); */
+	flex-direction: row;
+	will-change: transform;
+	flex: 1;
+	/*transition: all 1s cubic-bezier(0.19, 0.54, 0.32, 0.99);*/
+}
+
+.main-box {
+	height: calc(100vh - 11rem);
+	padding: 0;
+	transform: translate3d(0,0,0);
+}
+
+.whole-box {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 3rem;
+	box-sizing: border-box;
+	/*background-color: #000;*/
+}
+
+.box-container.column {
+	flex-direction: column;
+}
+
+.box-container.right {
+	flex: .7;
+}
+
+.box {
+	border-radius: 1rem;
+	/* padding: 2.5rem 3rem; */
+	margin: 1rem;
+	/* box-shadow: 0 1rem 3rem rgba(0,0,0,.3); */
+	color: #fff;
+	/*background-color: rgba(255,255,255,.07);*/
+	background-color: #131313;
+	flex: 1;
+	box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+	overflow: hidden;
+}
+
+.box.particle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: calc(100% - 2rem);
+	height: calc(100% - 2rem);
+}
+
+.box .box-title {
+	position: sticky;
+	top: 0;
+	padding: 1.5rem 2rem 0;
+	transition: background-color .5s ease;
+	z-index: 10;
+	text-align: center;
+}
+
+.box .box-title > h1 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	display: inline-block;
+	/*border-bottom: 1px solid rgba(255,255,255,.1);*/
+	padding-bottom: 1.5rem;
+}
+
+.box.scrolling .box-title {
+	background-color: rgba(46, 46, 46, 0.98);
+}
+
+.box .box-title.mini {
+	/* padding-bottom: 1rem; */
+	padding: 1.5rem 2rem 0;
+}
+
+.box .box-title.mini > h1 {
+	font-size: 2.1rem;
+	padding-bottom: 1rem;
+}
+
+.box .box-contents {
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.7;
+	/* margin: 2rem 0 2.7rem; */
+	padding: 0 2rem 1.5rem;
+	/*transition: 2s cubic-bezier(0.82, 0.01, 0.32, 0.99);*/
+	will-change: transform;
+	/*word-break: break-word;*/
+	word-wrap: break-word;
+}
+
+.box .box-contents.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100% - 8rem);
+}
+
+.box .box-contents > div {
+	width: 100%;
+}
+
+/* Box Corps Duty */
+.box.corps-duty {
+
+}
+
+.box.corps-duty .box-contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	min-height: calc(100% - 8rem);
+	text-align: center;
+}
+
+/* Box ap info */
+.box.ap-info {
+}
+
+.box.ap-info .total {
+	font-size: 2.3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.box.ap-info .total .placeholder {
+	font-size: 3rem;
+	position: relative;
+	top: .1rem;
+	margin-right: .1rem;
+}
+
+.box.ap-info .platoon-container {
+	display: flex;
+	margin-top: 2rem;
+}
+
+.box.ap-info .platoon-container .platoon {
+	text-align: center;
+	flex: 1;
+	border-radius: .7rem;
+	padding: 0 0 .5rem;
+	background-color: rgba(255,255,255,.07);
+	margin-right: 1.5rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	overflow: hidden;
+}
+
+.box.ap-info .platoon-container .platoon:last-child {
+	margin-right: 0;
+}
+
+.box.ap-info .platoon-container .platoon .sub-title {
+	font-size: .9rem;
+	font-weight: 400;
+	margin-top: .5rem;
+	margin-bottom: -.8rem;
+}
+
+.box.ap-info .platoon .placeholder {
+	font-size: 1.5em;
+	margin-right: .1rem;
+	position: relative;
+	top: .12rem;
+}
+
+.box.ap-info .platoon .placeholder.pw {
+	font-size: 1.2em;
+}
+
+.box.ap-info .platoon-container .platoon .place {
+	background-color: rgba(255,255,255,.07);
+	padding: .1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: .5rem;
+}
+
+.box.absent {
+	flex: .7;
+}
+
+.box.absent .platoon,
+.box.remain .platoon {
+	background-color: rgba(255,255,255,.07);
+	/* padding: 1rem; */
+	padding: 0;
+	border-radius: .8rem;
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+}
+
+.box.absent .platoon:last-child,
+.box.remain .platoon:last-child {
+	margin-bottom: 0;
+}
+
+.box.absent .platoon .place,
+.box.remain .platoon .place {
+	font-size: 1.3rem;
+	background-color: rgba(255,255,255,.07);
+	padding: .2rem 1.5rem;
+	font-weight: 400;
+}
+
+.box.absent .platoon .placeholder,
+.box.remain .platoon .placeholder {
+	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
+}
+
+.box.absent .platoon .placeholder .ap,
+.box.remain .platoon .placeholder .ap {
+	font-size: 2rem;
+	margin-right: 1rem;
+	font-weight: 700;
+	/* white-space: nowrap; */
+	display: block;
+}
+
+.box.absent .platoon .placeholder .ap .time,
+.box.remain .platoon .placeholder .ap .time {
+	font-size: .8em;
+	font-weight: 400;
+}
+
+.box.schedule .placeholder {
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+
+
+/* Second Box */
+
+
+
+/* color */
+
+
+.green-blue {
+	background: linear-gradient(to bottom right, #14fff3, #200069);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* color: #ff7d7d; */
+}
+.red {
+	background: linear-gradient(to bottom right, #ff9946, #ff1c1c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* color: #ff7d7d; */
+}
+
+.orange {
+	/* color: #ffc379; */
+	background: linear-gradient(to bottom right, #ffa600, #eee235);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.blue {
+	/* color: #83b9ff; */
+	background: linear-gradient(to bottom right, #468efa, #3d56e0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.green {
+	/* color: #7efabc; */
+	background: linear-gradient(to bottom right, #43fdb6, #0ac8d6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.purple {
+	/* color: #967eff; */
+	background: linear-gradient(to bottom right, #8644ff, #4a18fd);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pink {
+	/* color: #967eff; */
+	background: linear-gradient(to bottom right, #bc4cfd, #ff256d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.aqua {
+	/* color: #967eff; */
+	background: linear-gradient(to bottom right, #2ef5b3, #18def8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.awef {
+	/* color: #967eff; */
+	background: linear-gradient(to bottom right, #ff3636, #fdb36e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,38 @@
+#add-ap-main {
+	margin-top: 30px;
+	padding: 0 20px;
+}
+
+
+
+.item-col-nm {
+	flex: 2
+}
+
+.item-col-pn {
+	flex: 3
+}
+
+.item-col-ea {
+	flex: 4
+}
+
+.item-col-ta {
+	flex: 4
+}
+
+.item-col-da {
+	flex: 4
+}
+
+.item-col-bd {
+	flex: 4
+}
+
+.item-col-lv {
+	flex: 3
+}
+
+.item-col-pt {
+	flex: 2;
+}

@@ -1,0 +1,119 @@
+#duty-body {
+	/*background-color: #222738;*/
+	/*color: #fff;*/
+}
+
+#duty-main {
+	/* margin: auto; */
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+/* Settings */
+.setting-option {
+	font-family: 'SF Neo text';
+	font-weight: 700;
+	font-size: 18px;
+	background-color: #f0f0f0;
+	border: 3px solid transparent;
+	border-radius: 5px;
+	cursor: default;
+	user-select: none;
+	display: inline-block;
+	padding: 7px 15px;
+	margin: 5px;
+	transition: border .2s ease;
+}
+
+.setting-option:hover {
+	background-color: #e8e8e8;
+}
+
+.setting-option:active {
+	background-color: #f0f0f0;
+}
+
+.setting-option.selected {
+	border: 3px solid #12cc5c;
+}
+
+.set-this-month-duty {
+	text-align: center;
+	margin: 0 0 20px;
+	margin-top: 30px;
+	display: inline-block;
+	padding: 0 0 20px;
+	border: 3px solid #f0f0f0;
+	border-radius: 10px;
+}
+
+.setting-container {
+	padding: 20px;
+	border-bottom: 2px solid #f0f0f0;
+
+}
+
+.setting-title {
+	font-family: 'SF Neo text';
+	font-weight: 800;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.dang-before-setting {
+	user-select: none;
+}
+
+.dbs-item.selected {
+	border-color: #127fcc;
+}
+
+.ist-item.selected {
+	border-color: #cc123d;
+}
+
+.set-btn {
+	margin-top: 20px;
+    background-color: #39a564;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-bottom: 2px solid #208033;
+    color: #fff;
+	cursor: pointer;
+}
+
+.set-btn:hover {
+	background-color: #44bb73;
+}
+
+.set-btn:active {
+	background-color: #208033;
+	border-bottom: none;
+	border-top: 2px solid #105d1f;
+}
+/* Settings */
+
+.duty-table-wrapper {
+	width: calc(100% - 60px);
+	margin: auto;
+	margin-top: 10px;
+}
+
+.table-header {
+	text-align: center;
+	font-family: 'SF Neo text', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.duty-table {
+	margin: auto;
+	margin-top: 20px;
+	max-width: 800px;
+}
+
+@page {
+	size: 21cm 29.7cm;
+	margin: 1.5cm 1cm;
+}

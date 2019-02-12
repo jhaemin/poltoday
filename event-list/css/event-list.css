@@ -1,0 +1,86 @@
+html {
+	background: #fff;
+	color: #c7c7c7;
+}
+
+.event-list-headline {
+	margin: 0;
+	padding-top: 30px;
+	color: #222;
+	border-top: 1px solid #151518;
+	text-align: center;
+	background: #fff;
+}
+
+.event-container {
+	display: flex;
+	margin-top: 20px;
+	background: #fff;
+}
+
+.specific-event-category {
+	flex: 1;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.specific-event-category > .title {
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 0px;
+	margin: 0 -20px;
+	padding: 10px;
+	/* padding-bottom: 10px; */
+	background: #fff;
+	/* border-bottom: 1px solid #dddddd; */
+	box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	color: #222;
+	/* border-bottom: 1px solid #f0f0f0; */
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.event-item {
+	background-color: #fff;
+	color: #222;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.event-name {
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.event-name .start-date {
+	color: #1e80ff;
+	/* margin-top: 5px; */
+	display: inline-block;
+}
+
+.event-name .end-date {
+	color: #06b45d;
+}
+
+.event-edit {
+	margin-top: 10px;
+	cursor: default;
+}
+
+.event-mod-btn {
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #222;
+	padding: 7px 15px;
+	border-radius: 5px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.event-mod-btn:hover {
+	background: #f0f0f0;
+}

@@ -1,0 +1,387 @@
+body {
+}
+
+#outside-activity-chart-main {
+
+}
+
+.date-change {
+	margin-bottom: 20px;
+}
+
+.password-input {
+	font-family: sans-serif;
+	width: calc(100% - 40px);
+	margin: 20px auto;
+}
+
+.action-bubble {
+	display: inline-block;
+	position: fixed;
+	z-index: 9999;
+	/* display: none; */
+	visibility: hidden;
+	cursor: default;
+}
+
+.action-bubble.active {
+	display: inline-block;
+	visibility: visible;
+}
+
+.ab-background {
+	background-color: #fff;
+	border-radius: 5px;
+	display: -webkit-flex;
+	display: flex;
+	padding: 3px;
+	position: relative;
+	-webkit-backface-visibility: hidden;
+}
+
+.ab-background::before {
+	content: "";
+	position: absolute;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	box-shadow: 0 5px 40px rgba(0,0,0,.4);
+}
+
+.ab-delete, .ab-edit {
+	font-size: 0.8rem;
+	background: none;
+	border: none;
+	padding: 7px 15px;
+	border-radius: 5px;
+	font-weight: 700;
+	transition: background .1s ease-in-out, color .1s ease-in-out;
+}
+
+.ab-delete {
+
+}
+
+.ab-delete:hover {
+	background: #F24D6C;
+	color: #fff;
+}
+
+.ab-edit {
+	margin-left: 3px;
+}
+
+.ab-edit:hover {
+	background: #2ADE95;
+	color: #fff;
+}
+
+.ab-arrow {
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	top: calc(100% - 10px);
+	box-shadow: 0 0px 30px rgba(0,0,0,.5);
+	z-index: -1;
+}
+
+.chart-wrapper {
+	padding: 0;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.typography-header {
+	text-align: center;
+	margin: 0;
+}
+
+.whole-table {
+	margin: auto;
+	margin-top: 1.5rem;
+	width: calc(100% - 40px);
+}
+
+.table {
+	display: table;
+	border-collapse: collapse;
+	/*border-radius: 5px 5px 0 0;*/
+	/*overflow: hidden;*/
+	table-layout: fixed;
+	/*max-width: 1800px;*/
+	/*margin: auto;*/
+}
+
+.table.govern {
+	/* display: none; */
+}
+
+.row {
+	display: table-row;
+}
+
+.row-date {
+	border-top: 3px solid #404040;
+}
+
+.col {
+	/*font-family: 'JHM Pro', sans-serif;*/
+	font-size: .8rem;
+	font-weight: 700;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-grow: 1;
+	display: table-cell;
+	border: 1px solid #838383;
+	padding: 5px;
+	cursor: default;
+	user-select: none;
+}
+
+.col-date {
+	font-family: 'JHM Pro', sans-serif;
+}
+
+.col-date.full {
+	background-color: #fff81b;
+}
+
+.col-date.max {
+	background-color: #ff0d0d;
+	color: #fff;
+}
+
+.col.planned {
+	position: relative;
+	transition: box-shadow .1s ease-in-out, transform .1s ease-in-out;
+	-webkit-box-shadow: 0 0 0 rgba(0,0,0,.4);
+	box-shadow: 0 0 0 rgba(0,0,0,.4);
+}
+
+.col.planned:hover {
+	filter: brightness(95%);
+}
+
+.col.planned.moving {
+	filter: brightness(90%);
+	z-index: 10;
+}
+
+.emptyDate:hover {
+	background-color: #e8e8e8;
+}
+
+.emptyDate:active {
+	background-color: #2ADE95;
+}
+
+.emptyDate.selected {
+	background-color: #2ADE95;
+}
+
+.hang-prev {
+	border-left-color: #FF2F2F;
+	border-left-width: 5px;
+}
+
+.hang-next {
+	border-right-color: #FF2F2F;
+	border-right-width: 5px;
+}
+
+.whole {
+	border-left-color: #FF2F2F;
+	border-left-width: 5px;
+	border-right-color: #FF2F2F;
+	border-right-width: 5px;
+}
+
+.col.p0 {
+	background-color: #e8e8e8;
+}
+
+.col.p1 {
+	background-color: #ffd6b5;
+}
+
+.col.p2 {
+	background-color: #ffd4d4;
+}
+
+.col.p3 {
+	background-color: #d3e7ff;
+}
+
+.col.govern {
+	background-color: #cfffd0;
+}
+
+/* Add Activity */
+.add-activity-wrapper {
+	width: 100%;
+	box-sizing: border-box;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8888;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.add-activity-wrapper.hidden {
+	display: none;
+}
+
+.add-activity-background {
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.active .add-activity-background {
+	opacity: 1;
+}
+
+.add-activity {
+	z-index: 1;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 0;
+	box-sizing: border-box;
+	margin: auto;
+    width: auto;
+    overflow: hidden;
+    /* box-shadow: 0 10px 100px rgba(0,0,0,.4); */
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    transition: opacity .3s ease-in-out, transform .3s cubic-bezier(0.93, -0.52, 0, 1.69);
+}
+
+.active .add-activity {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.interval-display {
+	text-align: center;
+	margin-top: .4rem;
+}
+
+.ap-input {
+	border: none;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 1rem;
+	height: 3rem;
+	width: calc(100% - 40px);
+	background-color: #f0f0f0;
+	box-sizing: border-box;
+}
+
+.ap-input-placeholder {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-wrapper {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 2rem;
+	font-family: 'SF Neo text';
+	font-weight: 400;
+}
+
+.header-wrapper > * {
+	font-weight: 400;
+}
+
+.add-activity-form .ap-id {
+	border: 2px solid #e0e0e0;
+	border-radius: 5px;
+}
+
+.add-activity-form .type {
+	/* width: 100%; */
+	cursor: default;
+}
+
+.add-activity-form .display-name {
+	/* width: 100%; */
+	text-align: center;
+}
+
+.button-container {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 0;
+}
+
+.button-container > * {
+	font-size: initial;
+}
+
+.button-container button {
+	border-radius: 0px;
+}
+
+.button-container .done, .button-container .cancel {
+	display: inline-block;
+	width: 50%;
+	font-size: .8rem;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	height: 3rem;
+	transition: background-color .1s ease-in-out;
+}
+
+.button-container .done {
+	background-color: #0ec593;
+}
+
+.button-container .done:hover {
+	background-color: #2ca282;
+}
+
+.button-container .cancel {
+	background-color: #f73b3b;
+}
+
+.button-container .cancel:hover {
+	background-color: #d43939;
+}
+
+@media print {
+	.typography-header {
+		margin-top: 0;
+	}
+	.section-to-print {
+		zoom: 50%;
+	}
+}
+
+@page {
+	margin: 1cm;
+	size: 29.7cm 21cm;
+}

@@ -1,0 +1,74 @@
+#transfer-main {
+    padding: 0 20px;
+}
+
+.typography-header {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.diary-container {
+    font-size: 0;
+    margin-top: 30px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+}
+
+.diary-container > * {
+    font-size: initial;
+}
+
+.diary-wrapper {
+    display: inline-block;
+    height: auto;
+    width: calc(33.3333333333333333333333333% - 20px);
+    margin: 10px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 1000px) {
+    .diary-wrapper {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .diary-wrapper {
+        width: calc(100% - 20px);
+    }
+}
+
+.part-header {
+    font-family: 'SF Neo text';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.diary-contents {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: vertical;
+    height: 500px;
+    overflow: auto;
+}
+
+.diary-contents:focus {
+    outline: 3px solid #000;
+}
+
+.diary-contents input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 5px;
+}

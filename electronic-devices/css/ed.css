@@ -1,0 +1,18 @@
+#ed-main {
+	padding: 2rem;
+}
+
+.radio-container {
+	
+}
+
+.platoon-select {
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+	background: red;
+}
+
+.platoon-select:checked {
+	background: blue;
+}

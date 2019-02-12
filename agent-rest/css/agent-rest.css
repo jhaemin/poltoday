@@ -1,0 +1,83 @@
+#agent-rest-main {
+    padding: 40px;
+}
+
+.new-events-container {
+    margin-top: 30px;
+}
+
+.new-event-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.nei-input {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px;
+    outline: none;
+    font-family: 'SF Neo text';
+    font-weight: 400;
+}
+
+.new-event-item .agent-id {
+    user-select: none;
+    cursor: default;
+}
+
+.new-event-item .agent-name {
+    user-select: none;
+    cursor: default;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-event-item .event-at {
+
+}
+
+.arm-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.arm-add-btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.recent-agent-event-list {
+
+}
+
+.recent-agent-event-list .item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.recent-agent-event-list .item .delete {
+    background-color: #3a26bd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}

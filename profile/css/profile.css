@@ -1,0 +1,60 @@
+#profile-main {
+	padding-top: 30px;
+	margin-bottom: 100px;
+}
+
+.information {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.information .name, .information .level {
+	font-family: 'SF Neo text', sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+}
+
+.platoon, .roll {
+	margin-top: 2rem;
+}
+
+.roll-list, .platoon-list {
+	user-select: none;
+	margin: 0;
+}
+
+.roll-item, .platoon-item {
+	display: inline-block;
+	font-size: .9rem;
+	background-color: #f0f0f0;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.roll-item:hover, .platoon-item:hover {
+	background-color: #e8e8e8;
+}
+
+.roll-item.selected, .platoon-item.selected {
+	background-color: #F6153E;
+	color: #fff;
+}
+
+.roll-change-history {
+
+}
+
+.rch-item {
+	background-color: #f0f0f0;
+	font-size: .9rem;
+	padding: 5px;
+}
+
+.personal-information {
+	border-top: 1px solid #f0f0f0;
+	margin-top: 3rem;
+	padding-top: 3rem;
+}

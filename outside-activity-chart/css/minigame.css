@@ -1,0 +1,31 @@
+#leaderboard-wrapper {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#leaderboard {
+	display: inline-block;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3), inset 0 0 4px 3px rgba(0, 0, 0, .1);
+	background-color: #37a12e;
+	padding: 20px 40px;	
+	color: white;
+	border: 10px solid #ffbb00;
+}
+
+#leaderboard h1 {
+	margin-bottom: 20px;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+#leaderboard .item {
+	background-color: #2f8827;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+	font-weight: 400;
+	font-size: 1rem;
+	text-align: left;
+}

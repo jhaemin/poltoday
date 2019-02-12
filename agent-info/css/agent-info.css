@@ -1,0 +1,115 @@
+#agent-info-main {
+	display: flex;
+	margin-bottom: 0;
+}
+
+.current-agent-board {
+	flex: 7;
+	padding: 1.5rem;
+	text-align: center;
+	overflow-y: auto;
+}
+
+.all-agents-list {
+	flex: 2;
+	border-left: 1px solid #dfdfdf;
+	padding: 0 1.5rem;
+	box-sizing: border-box;
+	height: 100vh;
+	/* overflow-y: auto; */
+}
+
+.top-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.group {
+	flex: 1;
+	margin: 1rem 0;
+}
+
+.character {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	background-color: #eeeeee;
+}
+
+.platoon {
+
+}
+
+.master {
+	margin-bottom: 1rem;
+}
+
+.head, .sub {
+	margin: 1rem 0;
+}
+
+.call, .name {
+	text-align: center;
+}
+
+.call {
+	width: 100%;
+	font-size: 1rem;
+	margin-bottom: .5rem;
+	font-weight: 700;
+	/* padding: .2rem; */
+}
+
+.name {
+	width: 100%;
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+.name.special-name {
+	font-weight: 900;
+	font-size: 2.2rem;
+}
+
+.all-agents-list .header {
+	font-weight: 900;
+	font-size: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	background-color: #fff;
+}
+
+.members .person {
+	background-color: #eee;
+	border-radius: .5rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	/* cursor: pointer; */
+	user-select: none;
+	position: relative;
+	z-index: 1000;
+	transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+	will-change: transform;
+}
+
+.members .person.moving-target {
+	background-color: #fff;
+	box-shadow: 0 10px 40px rgba(0,0,0,.2), inset 0 0 0 3px rgb(35, 149, 255);
+	/* transform: scale(1.04) */
+}
+
+.members .poerson:hover {
+	background-color: rgb(216, 216, 216);
+}
+
+.members .poerson:active {
+	background-color: rgb(189, 189, 189);
+}
+
+.members .person .name {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 800;
+}

@@ -1,0 +1,94 @@
+.title-and-sign-area {
+    display: flex;
+    align-items: center;
+}
+
+.title-and-sign-area .title {
+    text-align: center;
+    flex: 1;
+}
+
+.title-and-sign-area .sign-area {
+    flex: 1;
+}
+
+.title-and-sign-area .sign-area table {
+    table-layout: auto;
+}
+
+.title-and-sign-area .sign-area table td {
+    padding: 1em;
+}
+
+table {
+	table-layout: auto;
+}
+
+.sign-area td, .sign-area th {
+    border: 2px solid #000;
+}
+
+.title-wrapper {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.title-wrapper > * {
+	font-size: inherit;
+}
+
+.table-title {
+	font-size: 20px;
+}
+
+.agent, .ap {
+	margin-top: .5em;
+}
+
+.journal-table {
+	margin-top: .4em;
+}
+
+.journal-table td, .journal-table th {
+	padding: .6em .3em;
+}
+
+.journal-table.ap {
+	table-layout: fixed;
+}
+
+.journal-table.ap td, .journal-table.ap th {
+	padding: .2em;
+	font-size: .4em;
+}
+
+.direction {
+	margin-top: .4em;
+}
+
+.direction .sign-box {
+	background-color: #cccccc;
+	border: 1px solid black;
+	height: 50px;
+	margin-top: .5em;
+}
+
+.observer {
+	margin-top: .4em;
+}
+
+.observer .sign-box {
+	background-color: #cccccc;
+	border: 1px solid black;
+	height: 150px;
+	margin-top: .5em;
+}
+
+.night, .govern {
+	margin-top: .5em;
+}
+
+.govern td, .govern th {
+	padding: .2em 0;
+}

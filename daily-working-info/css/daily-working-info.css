@@ -1,0 +1,146 @@
+#dwi-main {
+	margin-bottom: 0;
+}
+
+#drop-zone {
+	background: #f3f5f8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	font-weight: 900;
+	font-size: 30px;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	line-height: 1.4;
+	position: relative;
+}
+
+.icon {
+	width: 70px;
+	height: 85px;
+	background: #fff;
+	border: 3px solid #444;
+	border-radius: 7px;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.icon .line {
+	width: calc(100% - 20px);
+	height: 3px;
+	background: #444;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#drop-zone .drop-indicator {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 20px;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	background: rgba(42, 159, 255, 0.253);
+	z-index: 10;
+	border-style: dashed;
+	border-color: rgba(0, 81, 148, 0.548);
+	border-width: 5px;
+	box-sizing: border-box;
+	display: none;
+	pointer-events: none;
+}
+
+#drop-zone.dragover .drop-indicator {
+	display: block;
+}
+
+.img-holder {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.img-holder .img-wrapper {
+	width: 50%;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-holder .img-wrapper .image {
+	width: 100%;
+}
+
+.landscape .img-holder .img-wrapper {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landscape .img-holder .img-wrapper .image {
+	width: 70%;
+	transform: rotate(90deg);
+}
+
+.img-holder {
+	padding: 1cm .5cm;
+}
+
+.manifesto {
+	display: block;
+}
+
+.option-container {
+	display: flex;
+	margin-top: 10px;
+}
+
+.option-container .option {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	margin: 5px;
+	transition: all .2s ease;
+}
+
+.option-container .option:active {
+	transform: scale(.95);
+}
+
+.option-container .title {
+	pointer-events: none;
+	position: absolute;
+	font-size: 17px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.option-container input {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 8px;
+	background: #898b91;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.option-container input:hover {
+	background: #a6a7ac;
+}
+
+.option-container input:checked {
+	background: #3c3c44;
+}

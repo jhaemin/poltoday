@@ -1,0 +1,198 @@
+﻿.table-title {
+	font-size: .5em;
+	font-family: 'SF Neo text', sans-serif;
+	font-weight: 400;
+	margin-bottom: .1em;
+}
+
+.typography-header {
+	text-align: center;
+}
+
+.daily-information-title {
+	font-size: 1em;
+}
+
+.today-date {
+	text-align: right;
+	font-size: .5em;
+}
+
+.daily-information {
+	/* width: calc(100% - 40px);
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 100px; */
+}
+
+.abesnt-list-horizontal td,
+.abesnt-list-horizontal th
+{
+	/* font-size: 13px; */
+}
+
+.abesnt-list-horizontal {
+	table-layout: auto;
+}
+
+.abesnt-list-horizontal .activity-item {
+	margin: 0;
+	line-height: 1.2;
+}
+
+.top-table-container {
+	margin-top: .7em;
+	display: flex;
+}
+
+.counting-table-wrapper, .agent-wrapper {
+	display: inline-block;
+	width: calc(50% - 15px);
+}
+
+.counting-table-wrapper {
+	margin-right: 15px;
+}
+
+.counting .current {
+	background-color: #ffeded;
+	font-weight: 700;
+}
+
+.total-row {
+	background-color: #e6ffed;
+	font-weight: 700;
+}
+
+.agent-wrapper {
+	margin-left: 15px;
+}
+
+.alh-wrapper {
+	margin-top: .5em;
+}
+
+.agent-call-name {
+	margin: .4em 0;
+	padding: 0;
+	line-height: 1.1;
+	/* border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8; */
+	cursor: default;
+	user-select: none;
+	border-radius: 5px;
+}
+
+.agent-call-name:hover {
+	background-color: #f0f0f0;
+}
+
+.agent-call-name:active {
+	background-color: #e0e0e0;
+}
+
+.event-to-text {
+	margin-top: .5em;
+}
+
+/* 3기동단 경력 */
+.working-detail {
+	margin-top: .5em;
+}
+
+.whole-working-grid {
+	display: flex;
+}
+
+.whole-working-grid table {
+	flex: 1;
+	margin: 0 .2em;
+	table-layout: auto;
+}
+
+.whole-working-grid table:first-child {
+	margin-left: 0;
+}
+
+.whole-working-grid table:last-child {
+	margin-right: 0;
+}
+
+.our-part {
+	background-color: #c1ffd7;
+	font-weight: 700;
+}
+
+.jdjn, .light-out, .unique-ap, .hand {
+	margin-top: .5em;
+}
+
+.section .box {
+	background-color: #ecedef;
+	height: 2.3em;
+	width: 100%;
+	border: none;
+	resize: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.light-out .box, .hand .box, .patient .box, .catch .box {
+	padding: .3em;
+	font-size: .5em;
+	overflow: hidden;
+}
+
+.light-out .box {
+	height: 9em;
+}
+
+.hand .box {
+	height: 7em;
+}
+
+.section .container {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.section .container h2 {
+	font-size: .48em;
+	font-weight: 400;
+	font-family: 'SF Neo text';
+	text-align: left;
+	color: #333;
+}
+
+.section .container .area {
+	flex: 1;
+	background-color: #ecedef;
+	padding: .2em;
+	height: 1.5em;
+}
+
+.section .container .area:last-child {
+	margin-left: .3em;
+}
+
+
+table {
+	font-size: .9em;
+	table-layout: fixed;
+}
+
+table td, table th {
+	font-size: .4em;
+	border: 1px solid #999;
+	padding: .1em;
+}
+
+@media print {
+	.page-a4 {
+		/* zoom: 90%; */
+	}
+}
+
+@page {
+	size: 21cm 29.7cm;
+}
